@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "09185158-a9a1-4f91-925f-d02a50ed0287",
+		"name": "QA collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25946716"
+	},
+	"item": [
+		{
+			"name": "Get 90",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/90",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"90"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/user/repos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "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",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hello-Geetanjali\",\r\n    \"description\": \"This is your first repository\",\r\n    \"homepage\": \"https://github.com\",\r\n    \"private\": false,\r\n    \"has_issues\": true,\r\n    \"has_projects\": true,\r\n    \"has_wiki\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.github.com/user/repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post 110",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"rahul\",\r\n    \"lastName\": \"singh\",\r\n    \"email\": \"rspd.congue@velit.com\",\r\n    \"programme\": \"killer\",\r\n    \"courses\": [\r\n        \"Anatomy\",\r\n        \"Biochemistry\",\r\n        \"Genetics\",\r\n        \"Human Behavior.\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put 110",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 110,\r\n    \"firstName\": \"rspd\",\r\n    \"lastName\": \"maurya\",\r\n    \"email\": \"rahul.congue@velit.com\",\r\n    \"programme\": \"wizard\",\r\n    \"courses\": [\r\n        \"Anatomy\",\r\n        \"Biochemistry\",\r\n        \"Genetics\",\r\n        \"Human Behavior.\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/student/110",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"110"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.google.com/complete/search?q=who%20is%20idlp&cp=0&client=desktop-gws-wiz-on-focus-serp&xssi=t&hl=en-IN&authuser=0&pq=who%20is%20idlp&psi=19QaZNrVDIW64-EP9PGGcA.1679480023999&ofp=EAEyvgEKLgosaW5zdGl0dXRlIGluIGJhc2ljIGxpZmUgcHJpbmNpcGxlcyBsb2Nhd",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authority",
+						"value": "www.google.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "HSID=AsFqIVrc3qr3pC34U; SSID=A_GPazYSAAuA61I17; APISID=lkOR0zwY3j87c4T4/ApmJAEHSXupeRT0T1; SAPISID=ff24fp0Nri8N8TWa/A0fMh_LYqniWsznrz; __Secure-1PAPISID=ff24fp0Nri8N8TWa/A0fMh_LYqniWsznrz; __Secure-3PAPISID=ff24fp0Nri8N8TWa/A0fMh_LYqniWsznrz; SEARCH_SAMESITE=CgQIyJcB; OTZ=6941586_34_34__34_; SID=UQiYaUeJTSrHNXhNV-oJ90erawB-sCdxOjjdzpoPCHesFaU85j4ILcuif2j24o4EEtAcfg.; __Secure-1PSID=UQiYaUeJTSrHNXhNV-oJ90erawB-sCdxOjjdzpoPCHesFaU8bRNymJZETkVvL_qb-V3GjA.; __Secure-3PSID=UQiYaUeJTSrHNXhNV-oJ90erawB-sCdxOjjdzpoPCHesFaU8PKLTG7EZLkw_ovEEYK4iFQ.; AEC=ARSKqsJ2gPcFFsovgVTJbj_QYX2E_NeBW1uU_roDlOHOxOVKhLKb2dEIEuc; NID=511=YXZn2G5zRaDIdA2lA-x48A0UdkGZWKtkZqCed8YOromA9CLAy4XPnu1xF_itknB3erJDhzVMssxZ-O6_Hlpg2MyyD2PQsXiM6M4jrmJWWaWbXVnAym_ahUqXIl7zZz-0YVoukZ4Ma9oreupcviQ3yOvZFT3ZrPz_9dPEfEAcqOwRpfGKxU5JDzPdVFYdAiQN5A-PJzvlS0Z21-dNFmErlKJTKKWk5WtnFrTdq3EkFqbXxCPUcAIYTw; DV=I8_BNZsqxE1Q8JiFc16AWAYOZ2uEcBgtVbcxKQalWAAAANCl4tlOQwFiMQAAAPCSFA-qpoSSMgAAAHjU1yhfGuRCFAAAAA; 1P_JAR=2023-03-22-10; SIDCC=AFvIBn-SJ2Qy6xJkSH4NYYFFjIK6JAtaLNEWhofuEktyzGq8TBq3pNNii2AoDH2Si830euKfi1I; __Secure-1PSIDCC=AFvIBn9UBTvw2rvyTh5MBYI47NSt9Uq8PGiTFdk8yHBS6mz3W_LAd5WnY2Bs2xsATdSXUx0Xdw; __Secure-3PSIDCC=AFvIBn-WjZnIUtHqPveAWFnaLhMEkOyQB5XaOuuwhND18fE7vLKoRLXF7rVmfibYmZ8_E_09foo"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.google.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\""
+					},
+					{
+						"key": "sec-ch-ua-arch",
+						"value": "\"x86\""
+					},
+					{
+						"key": "sec-ch-ua-bitness",
+						"value": "\"64\""
+					},
+					{
+						"key": "sec-ch-ua-full-version",
+						"value": "\"111.0.5563.65\""
+					},
+					{
+						"key": "sec-ch-ua-full-version-list",
+						"value": "\"Google Chrome\";v=\"111.0.5563.65\", \"Not(A:Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"111.0.5563.65\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-model",
+						"value": ""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-ch-ua-platform-version",
+						"value": "\"15.0.0\""
+					},
+					{
+						"key": "sec-ch-ua-wow64",
+						"value": "?0"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-client-data",
+						"value": "CJK2yQEIprbJAQjBtskBCKmdygEIq5bLAQiSocsBCMf/zAEIuIbNAQiLjM0BCIGWzQEI4pfNAQjkl80BCPqYzQEI6JvNAQjLnM0B"
+					}
+				],
+				"url": {
+					"raw": "https://www.google.com/complete/search?q=who%20is%20idlp&cp=0&client=desktop-gws-wiz-on-focus-serp&xssi=t&hl=en-IN&authuser=0&pq=who%20is%20idlp&psi=19QaZNrVDIW64-EP9PGGcA.1679480023999&ofp=EAEyvgEKLgosaW5zdGl0dXRlIGluIGJhc2ljIGxpZmUgcHJpbmNpcGxlcyBsb2NhdGlvbnMKFwoVd2hhdCBpcyBpYmxwIHJlbGlnaW9uCgwKCmlibHAgcnVsZXMKDAoKaWJscCBhYnVzZQoOCgxpYmxwIG1lbWJlcnMKHgocYmlsbCBnb3RoYXJkIGFuZCBqYW5hIGR1Z2dhcgoVChNpYmxwIGNodXJjaCBuZWFyIG1lCg4KDGlibHAgbW9kZXN0eRBHMl8KJAoiV2hhdCBoYXMgaGFwcGVuZWQgdG8gQmlsbCBHb3RoYXJkPwoYChZXaGF0IHJlbGlnaW9uIGlzIElMQlA_ChoKGEhvdyBvbGQgaXMgQmlsbCBHb3RoYXJkPxDkAg&dpr=1.5",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"complete",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "who%20is%20idlp"
+						},
+						{
+							"key": "cp",
+							"value": "0"
+						},
+						{
+							"key": "client",
+							"value": "desktop-gws-wiz-on-focus-serp"
+						},
+						{
+							"key": "xssi",
+							"value": "t"
+						},
+						{
+							"key": "hl",
+							"value": "en-IN"
+						},
+						{
+							"key": "authuser",
+							"value": "0"
+						},
+						{
+							"key": "pq",
+							"value": "who%20is%20idlp"
+						},
+						{
+							"key": "psi",
+							"value": "19QaZNrVDIW64-EP9PGGcA.1679480023999"
+						},
+						{
+							"key": "ofp",
+							"value": "EAEyvgEKLgosaW5zdGl0dXRlIGluIGJhc2ljIGxpZmUgcHJpbmNpcGxlcyBsb2NhdGlvbnMKFwoVd2hhdCBpcyBpYmxwIHJlbGlnaW9uCgwKCmlibHAgcnVsZXMKDAoKaWJscCBhYnVzZQoOCgxpYmxwIG1lbWJlcnMKHgocYmlsbCBnb3RoYXJkIGFuZCBqYW5hIGR1Z2dhcgoVChNpYmxwIGNodXJjaCBuZWFyIG1lCg4KDGlibHAgbW9kZXN0eRBHMl8KJAoiV2hhdCBoYXMgaGFwcGVuZWQgdG8gQmlsbCBHb3RoYXJkPwoYChZXaGF0IHJlbGlnaW9uIGlzIElMQlA_ChoKGEhvdyBvbGQgaXMgQmlsbCBHb3RoYXJkPxDkAg"
+						},
+						{
+							"key": "dpr",
+							"value": "1.5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
